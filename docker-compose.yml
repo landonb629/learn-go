@@ -1,0 +1,10 @@
+version: '3'
+services:
+  go:
+    image: golang
+    volumes:
+      - type: bind 
+        source: ./ 
+        target: /usr/src/app
+    stdin_open: true 
+    tty: true
